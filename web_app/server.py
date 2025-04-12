@@ -3,6 +3,9 @@ import util
 
 app = Flask(__name__, template_folder='templates',static_folder='static',static_url_path='/')
 
+# app = Flask(__name__,template_folder='client',static_folder='client',static_url_path='/')
+application = app
+
 util.load_saved_artifacts()
 
 @app.route('/')
